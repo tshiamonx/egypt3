@@ -1,0 +1,96 @@
+<div class="lightbox-gallery">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css" />
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <nav>
+    <img src="images/logo.png" alt="logo" />
+    <a href="about.html">about</a>
+  </nav>
+  <div class="intro">
+    <div class="intro-text">
+      <h1>Ancient Egypt</h1>
+      <div class="underline 2"></div>
+      <div class="underline"></div>
+      <h2>The CorrellationOf Pharoah the Biblical Figure And Ramases The Historical Figure</h2>
+      <div class="underline"></div>
+      <h2></h2>
+      <div class="underline"></div>
+    </div>
+  </div>
+ 
+  <div class="image-container">
+    <img
+      src="images/throneroom.jpg"
+      alt="Throne Room"
+      onclick="openLightbox('images/throneroom.jpg', 'Throne Room')"
+    />
+    <h3>Throne Room</h3>
+  </div>
+  <div class="image-container">
+    <img
+      src="images/poster.png" 
+      alt="Poster"
+      onclick="openLightbox('images/poster.png', 'Poster')" 
+    />
+    <h3>Poster</h3>
+  </div>
+ 
+  <div class="image-container">
+    <img
+      src="images/bookC.jpg"
+      alt="Book Cover"
+      onclick="openLightbox('images/bookC.jpg', 'Book Cover')"
+    />
+    <h3>Book Cover</h3>
+  </div><div class="image-container">
+    <img
+      src="images/spine2.jpg"
+      alt="Symbol"
+      onclick="openLightbox('images/spine2.jpg', 'Encyclopedia')"
+    />
+    <h3>Encyclopedia</h3>
+  </div> <div class="image-container">
+    <img
+      src="images/bookb.jpg"
+      alt="Book B"
+      onclick="openLightbox('images/bookb.jpg', 'Back Of The Book')"
+    />
+    <h3>Back Of The Book</h3>
+  </div> 
+ 
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <div class="lightbox-content">
+    <img id="lightboxImage" src="" alt="Lightbox Image" />
+    <h2 id="lightboxHeading"></h2>
+  </div>
+</div>
+
+
+
+<script>
+  function openLightbox(imageSrc, heading) {
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxHeading = document.getElementById("lightboxHeading");
+    const lightbox = document.getElementById("lightbox");
+
+    lightboxImage.src = imageSrc; // Set the clicked image as the source
+    lightboxHeading.textContent = heading; // Set the heading text
+    lightbox.style.display = "flex"; // Show the lightbox
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById("lightbox");
+    lightbox.style.display = "none"; // Hide the lightbox
+  }
+</script>
+ </body></html>
