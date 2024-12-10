@@ -60,13 +60,10 @@ body {
   text-align: center;
 }
 .lightbox img {
-  max-width: 90%; /* Ensures the image never exceeds 90% of the screen width */
-  max-height: 80%; /* Ensures the image never exceeds 80% of the screen height */
-  width: auto; /* Maintains aspect ratio */
-  height: 100vh; /* Maintains aspect ratio */
-  display: block;
-  margin-bottom: 150px;
-  margin-top: 195px;
+  max-width: 90%;
+  max-height: 60%;
+  width: auto;
+  height: auto;
 }
 
 .lightbox h2 {
@@ -145,19 +142,22 @@ nav img {
   color: rgb(107, 77, 1);
 }
 h6 {
-  font-size: 20px; /* Smaller size for h2 */
+  font-size: 20px; /* Text size */
   color: rgb(107, 77, 1);
-  margin-right: auto;
-  margin-left: auto;
-  width: 80%;
-  margin-top: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  animation: fadeIn 2s ease-in;
+  margin: 0; /* Reset margin */
+  width: 80%; /* Optional: Control text width */
+  display: flex; /* Enable flexbox for alignment */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  position: absolute; /* Allow absolute positioning */
+  top: 50%; /* Center from top */
+  left: 50%; /* Center from left */
+  transform: translate(-50%, -50%); /* Adjust for element's own dimensions */
+  animation: fadeIn 0.1s ease-in;
 }
+
 .underline {
   margin: 0;
   width: 100vw;
