@@ -4,14 +4,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 248, 230);
+  background-color: beige;
 }
 .lightbox-gallery {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: center; /* Align horizontally */
+  align-items: center; /* Align vertically */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  gap: 20px; /* Add space between containers */
+  height: 100vh; /* Take full height of the viewport */
 }
-
 .image-container {
   display: flex;
   flex-direction: column;
@@ -21,20 +23,45 @@ body {
   animation: fadeIn 2s ease-in;
   margin-top: 100px;
   margin-left: 50px;
+  animation: float 3s infinite ease-in-out;
 }
 
 .image-container img {
-  width: 300px;
-  height: 200px;
+  width: 400px; /* Increased width */
+  height: 300px;
   object-fit: cover;
   margin: 5px;
   cursor: pointer;
   border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Stagger animation for each image */
+.image-container:nth-child(1) img {
+  animation-delay: 2s;
+}
+
+.image-container:nth-child(2) img {
+  animation-delay: 1s;
+}
+
+.image-container:nth-child(3) img {
+  animation-delay: 3s;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Float up */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
 .image-container img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .image-container h3 {
@@ -89,8 +116,8 @@ nav {
   margin: 0;
   overflow: auto;
   height: 4rem;
-  background-color: rgb(255, 248, 230);
-  border: rgb(63, 86, 166) solid 5px;
+  background-color: beige;
+  border: goldenrod solid 10px;
 }
 nav a {
   float: right;
@@ -98,7 +125,7 @@ nav a {
   margin-top: 20px;
   text-decoration: none;
   font-size: 2rem;
-  color: rgb(107, 77, 1);
+  color: navy;
 }
 nav img {
   width: 50px;
@@ -107,7 +134,7 @@ nav img {
   margin-left: 50px;
 }
 .intro {
-  background: rgb(255, 248, 230);
+  background: beige;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center;
@@ -134,16 +161,16 @@ nav img {
 .intro-text h1 {
   font-size: 60px; /* Bigger size for h1 */
 
-  color: rgb(107, 75, 0);
+  color: navy;
   font-weight: bold;
 }
 .intro-text h2 {
   font-size: 30px; /* Smaller size for h2 */
-  color: rgb(107, 77, 1);
+  color: navy;
 }
 h6 {
   font-size: 20px; /* Text size */
-  color: rgb(107, 77, 1);
+  color: navy;
   margin: 0; /* Reset margin */
   width: 80%; /* Optional: Control text width */
   display: flex; /* Enable flexbox for alignment */
@@ -162,5 +189,5 @@ h6 {
   margin: 0;
   width: 100vw;
   height: 2px;
-  background-color: rgb(63, 86, 166);
+  background-color: goldenrod;
 }
