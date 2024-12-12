@@ -1,41 +1,146 @@
-<div class="lightbox-gallery">
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="main.css" />
-      <title>Document</title>
-    </head>
-    <body>
-      <nav>
-        <img src="images/logo.png" alt="logo" />
-        <a href="index.html">home</a>
-      </nav>
-      <div class="intro">
-        <div class="intro-text">
-          <h1>Ancient Egypt</h1>
-          <div class="underline 2"></div>
-          <div class="underline"></div>
-          <h6>
-            While conducting my research I learnt that people argue about who
-            represents Pharoah in the bible, because he was never named. Meaning
-            that there is a high possibility that Ramses is not presented in the
-            bible. When the generations were throned, they were called Pharaohs,
-            they were never called by their names. The only Rameses we are aware
-            of in the bible was the land or city in Egypt. In the bible we learn
-            about two generations of Pharaohs, the father and the son. It is a
-            beautiful story yet a tragic one, the first generation (first
-            Pharaoh) feared that the Israelites might take over Egypt if they
-            populate, therefore he made an unpredictable move and demanded that
-            the first-born sons of the Israelites that were below the age of
-            three to be killed. This way he was able to instill fear in the
-            Israelites and made it easy for him to enslave them and have control
-            over them
-          </h6>
-          <div class="underline"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ancient Egypt</title>
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <nav class="nav">
+      <img src="images/logo.png" alt="logo" />
+      <a href="index.html">home</a>
+    </nav>
+
+    <!-- Intro Section -->
+    <div class="intro">
+      <div class="intro-text">
+        <h1>Ancient Egypt</h1>
+        <div class="underline 2"></div>
+        <div class="underline"></div>
+        <h2>The Correllation Of Pharoah the Biblical Figure And Ramases The Historical Figure</h2>
+        <div class="underline"></div>
+        <h2></h2>
+        <div class="underline"></div>
+      </div>
+    </div>
+        <div class="image-container">
+          <h3>
+            During my research, I discovered that there is ongoing debate about
+            the identity of the Pharaoh mentioned in the Bible, as he is never
+            explicitly named. This raises the possibility that Ramses may not be
+            the Pharaoh referenced in biblical narratives. In fact, the name
+            "Rameses" appears in the Bible only as a land or city in Egypt.
+            Interestingly, the term "Pharaoh" was a title used for Egyptian
+            rulers rather than a personal name. The biblical account describes
+            two generations of Pharaohs—a father and his son. Their story is
+            both captivating and tragic. The first Pharaoh feared that the
+            Israelites might overpopulate and pose a threat to his kingdom. In a
+            drastic and calculated move, he ordered the killing of all Israelite
+            firstborn sons under the age of three. This act of cruelty was
+            intended to instill fear among the Israelites, enabling him to
+            enslave them and maintain control over them.
+          </h3>
         </div>
       </div>
-    </body>
-  </html>
-</div>
+    </div>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+
+        background-color: beige;
+      }
+      nav {
+        width: 100vw;
+        margin: 0;
+        overflow: auto;
+        height: 4rem;
+        background-color: beige;
+        border: goldenrod solid 10px;
+      }
+      nav a {
+        float: right;
+        margin-right: 200px;
+        margin-top: 20px;
+        text-decoration: none;
+        font-size: 2rem;
+        color: navy;
+      }
+      nav img {
+        width: 50px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+      /* Intro Section */
+      /* Intro Section */
+      .intro {
+  background: beige;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  height: 30vh;
+  text-align: center;
+  font-family: GarageGothic;
+  font-style: normal;
+  color: rgb(41, 42, 44);
+  animation: fadeInUp; /* Fade in animation */
+  animation-duration: 1s; /* Duration of the animation */
+  animation-timing-function: ease-in-out; /* Easing function */
+}
+
+.intro-text h1 {
+  font-size: 60px; /* Bigger size for h1 */
+
+  color: navy;
+  font-weight: bold;
+}
+.intro-text h2 {
+  font-size: 30px; /* Smaller size for h2 */
+  color: navy;
+}
+
+.underline {
+  
+  width: 100vw;
+  height: 2px;
+  background-color: goldenrod;
+}
+
+
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        animation: fadeIn 2s ease-in;
+        margin-top: 100px;
+        margin-left: 50px;
+        animation: float 3s infinite ease-in-out;
+      }
+      .image-container h3 {
+  font-size: 30px; /* Keep the font size */
+  margin: 0 auto; /* Center the element horizontally */
+  color: navy;
+  text-align: center; /* Ensure text inside is centered */
+  max-width: 80%; /* Restrict width for better readability */
+}
+      .underline {
+      
+        width: 100%;
+        height: 2px;
+        background-color: goldenrod;
+      }
+      .underline2 {
+     
+        width: 100%;
+        height: 5px;
+        background-color: goldenrod;
+      }
+    </style>
+  </body>
+</html>

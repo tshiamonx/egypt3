@@ -147,16 +147,6 @@ nav img {
   animation-duration: 1s; /* Duration of the animation */
   animation-timing-function: ease-in-out; /* Easing function */
 }
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px); /* Starts above */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* Ends in normal position */
-  }
-}
 
 .intro-text h1 {
   font-size: 60px; /* Bigger size for h1 */
@@ -167,22 +157,6 @@ nav img {
 .intro-text h2 {
   font-size: 30px; /* Smaller size for h2 */
   color: navy;
-}
-h6 {
-  font-size: 20px; /* Text size */
-  color: navy;
-  margin: 0; /* Reset margin */
-  width: 80%; /* Optional: Control text width */
-  display: flex; /* Enable flexbox for alignment */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  text-align: center; /* Center text */
-  position: absolute; /* Allow absolute positioning */
-  top: 50%; /* Center from top */
-  left: 50%; /* Center from left */
-  transform: translate(-50%, -50%); /* Adjust for element's own dimensions */
-  animation: fadeIn 0.1s ease-in;
 }
 
 .underline {
